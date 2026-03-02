@@ -3,15 +3,14 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  
-  base: "/",
-  plugins: [react({ include: /\.(jsx|js|tsx|ts)$/ } )],
+  base: "./", 
+  plugins: [react({ include: /\.(jsx|js|tsx|ts)$/ } )], 
   css: {
     postcss: "./postcss.config.js",
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(process.cwd(), "./src"),  
     },
   },
   server: {
@@ -20,6 +19,5 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    
   },
 });
