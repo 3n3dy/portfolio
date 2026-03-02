@@ -19,13 +19,5 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          motion: ["framer-motion"],
-        },
-      },
-    },
   },
 });
