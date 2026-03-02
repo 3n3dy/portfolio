@@ -67,7 +67,7 @@ const ProjectLine = memo(
 
         <AnimatePresence>
           
-          {hovered && (project.previewGif || project.screenshot) && (
+          {(hovered || previewOpen) && (project.previewGif || project.screenshot) && (
             <motion.div
               initial={{ opacity: 0, scale: 0.92, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}

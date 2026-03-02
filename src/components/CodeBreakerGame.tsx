@@ -96,6 +96,7 @@ const TerminalLine = memo(
 TerminalLine.displayName = "TerminalLine";
 
 export const CodeBreakerGame = memo(({ show, onClose }: CodeBreakerProps) => {
+   if (!show) return null;
   const [stage, setStage] = useState<"locked" | "cracking" | "decrypted">(
     "locked"
   );
@@ -165,20 +166,10 @@ export const CodeBreakerGame = memo(({ show, onClose }: CodeBreakerProps) => {
     }
   };
 
-  const handleDownloadCV = () => {
-    // Trigger CV download
-    const link = document.createElement("a");
-    link.href = "/cv.pdf";
-    link.download = "Andrii_Chyvotiov_CV.pdf";
-    link.click();
-  };
-
   return (
     <AnimatePresence>
-      {show && (
-        <>
-          {/* Backdrop */}
-          <motion.div
+      {/* Backdrop */}
+      <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -396,9 +387,7 @@ export const CodeBreakerGame = memo(({ show, onClose }: CodeBreakerProps) => {
                 )}
               </div>
             </motion.div>
-          </motion.div>
-        </>
-      )}
+      </motion.div>
     </AnimatePresence>
   );
 });

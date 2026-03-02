@@ -40,7 +40,7 @@ const AboutSection = memo(() => {
           <div ref={leftRef} className="reveal">
             {/* Photo block */}
             <div className="relative mb-8">
-              {/* Replace src with your actual photo path: /photo.jpg */}
+
               <div
                 className="w-full aspect-[4/5] bg-ink-3 border border-border overflow-hidden relative"
                 style={{ maxWidth: 440 }}

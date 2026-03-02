@@ -45,14 +45,6 @@ export function useCustomCursor() {
       }
       if (dotRef.current) dotRef.current.style.transform = "translate(-50%,-50%) scale(0)";
     };
-    const onEnterDark = () => {
-      if (dotRef.current) dotRef.current.style.background = '#000';
-      if (ringRef.current) {
-        ringRef.current.style.borderColor = "rgba(0,0,0,0.6)";
-        ringRef.current.style.width = "44px";
-        ringRef.current.style.height = "44px";
-      }
-    };
     const onLeaveLink = () => {
       if (ringRef.current) {
         ringRef.current.style.width = "36px";
