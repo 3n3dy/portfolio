@@ -225,4 +225,4 @@ var ContactSection = (0, react_1.memo)(function () {
     </section>);
 });
 ContactSection.displayName = "ContactSection";
-exports.default = ContactSection;
+export default Contact;

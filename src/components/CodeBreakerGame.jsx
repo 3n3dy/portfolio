@@ -287,3 +287,4 @@ exports.CodeBreakerGame = (0, react_1.memo)(function (_a) {
     </framer_motion_1.AnimatePresence>);
 });
 exports.CodeBreakerGame.displayName = "CodeBreakerGame";
+export default CodeBreakerGame;

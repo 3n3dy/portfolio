@@ -26,4 +26,4 @@ var Footer = (0, react_1.memo)(function () {
     </footer>);
 });
 Footer.displayName = "Footer";
-exports.default = Footer;
+export default Footer;

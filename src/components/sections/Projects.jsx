@@ -127,4 +127,4 @@ var ProjectsSection = (0, react_1.memo)(function () {
     </section>);
 });
 ProjectsSection.displayName = "ProjectsSection";
-exports.default = ProjectsSection;
+export default Projects;

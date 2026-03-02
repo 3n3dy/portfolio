@@ -112,4 +112,4 @@ var HeroSection = (0, react_1.memo)(function () {
     </section>);
 });
 HeroSection.displayName = "HeroSection";
-exports.default = HeroSection;
+export default Hero;

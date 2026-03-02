@@ -129,4 +129,4 @@ var AboutSection = (0, react_1.memo)(function () {
       </>);
 });
 AboutSection.displayName = "AboutSection";
-exports.default = AboutSection;
+export default About;

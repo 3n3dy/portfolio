@@ -79,4 +79,4 @@ var Header = (0, react_1.memo)(function () {
     </framer_motion_1.AnimatePresence>);
 });
 Header.displayName = "Header";
-exports.default = Header;
+export default Header;
